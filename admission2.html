@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<style>
+     h1{
+      background-color:rgb(233, 201, 16);
+      color:rgb(231, 33, 116);
+     
+    }
+    body
+    {
+      background-color:rgb(143, 61, 250);
+    }
+    button{
+      background-color:rgb(226, 230, 14);
+    }
+    #submit
+    {
+        background-color: rgb(34, 228, 34);
+        color :black;
+
+    }
+    #clear{
+        background-color: red;
+        color: white;
+    }
+</style>
+<body>
+    <button id = home><a href="admission.html">Go back</a></button>
+    <h1 align ="center"><u>Admission Form</u></h1>
+    <hr color = "red">
+    <div id = box>
+    <form id = form>
+       First Name: <input id = text type="text" name="t1" size="10" style="width: 200px; height: 50px; border-radius: 10px;"/>
+       Middle Name: <input id = text type="text" name="t1" size="10" style="width: 200px; height: 50px; border-radius: 10px;"/>
+       Last Name: <input id = text type="text" name="t1" size="10" style="width: 200px; height: 50px; border-radius: 10px;"/></br><br>
+       Phone Number: <input id = text type="text" name="t1" size="10" style="width:200px; height:50px; border-radius: 10px; "/>
+       E-mail: <input id = text type="text" name="t1" size="80" style="width:200px; height:50px; border-radius: 10px; margin-right: 80px;"/><br><br>
+        Address: <textarea name="t2" rows="5" cols="25"></textarea></br>
+        <br>
+        State: <select id = state name="t3">
+            <option value="cho">Select State</option>
+            <option value="KA">Karnataka</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="TE">Telangana</option>
+            <option value="KL">Kerala</option>
+            <option value="AP">Andhra Pradesh</option>
+        </select></br>
+        <br> 
+        Gender: 
+        <input id="gender" type="radio" name="t4" value="M">MALE
+        <input id= "gender" type="radio" name="t4" value="F">FEMALE</br>
+        <br>
+        Qualification: 
+        <input id = "check" type="checkbox" name="t5" value="sslc">SSLC
+        <input id = "check" type="checkbox" name="t6" value="puc">PUC
+        <input id = "check" type="checkbox" name="t7" value="iti">ITI
+        <input id = "check" type="checkbox" name="t8" value="diploma">Diploma
+        <input id = "check" type="checkbox" name="t9" value="be">BE</br>
+        <br>
+        Branches: <select id= branch name="t10">
+            <option value="ch">Choose Branch</option>
+            <option value="cs">Computer Science and Engineering</option>
+            <option value="ec">Electronics and Communication Engineering</option>
+            <option value="me">Mechanical Engineering</option>
+            <option value="ce">Civil Engineering</option>
+            </select><br>
+        </div>
+        
+        <br>
+        <center>
+        <button id = submit><a href="home.html">Submit</a></button>
+        <button id = clear>Clear</button>
+        </center>
+    </form>
+</body>
+</html>
+
+<input id=submit type="Submit" value="Submit"><a href="home.html"></a>
+<input id=clear type="Reset" value="Clear">

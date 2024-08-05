@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+    <h1 align ="center">Admission Form</h1>
+    <hr color = "red">
+    <button id = home><a href="admission.html">Go back</a></button>
+    <style>
+        #submit{
+            background-color: lightgreen;
+            color :black;
+            float: center;
+            padding: 20px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-right: 10px;
+        }
+        #clear{
+            background-color: red;
+            color: white;
+            float: center;
+            padding: 20px;
+            border-radius: 10px;
+            -moz-border-radius: 60px;
+            -webkit-border-radius: 10px;
+            font-size: 18px;
+        }
+        body{
+            background-color: rgb(235, 233, 211);
+            font-size: 25px;
+            line-height: 2.5em;
+        }
+        
+        form{
+            padding:10px;
+            border-radius: 10px;
+        }
+        text{
+           font-size: 100px;
+
+        }
+        #box{
+            background-color: rgb(221, 221, 221);
+            border-radius: 20px;
+            border: 2px rgb(66, 65, 65) solid;
+            margin: 0px 200px 10px 200px;
+            
+        }
+        #state{
+            font-size: 20px;
+        }
+        #branch{
+            font-size: 20px;
+        }
+        #gender{
+            size: 5%;
+        }
+        #check{
+            box-sizing: 10px;
+        }
+        #home{
+            background-color: rgb(255, 0, 0);
+            color: rgb(204, 202, 84);
+            padding : 5px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        
+    </style>
+    <div id = box>
+    <form id = form>
+       First Name: <input id = text type="text" name="t1" size="10" style="width: 200px; height: 50px; border-radius: 10px;"/>
+       Middle Name: <input id = text type="text" name="t1" size="10" style="width: 200px; height: 50px; border-radius: 10px;"/>
+       Last Name: <input id = text type="text" name="t1" size="10" style="width: 200px; height: 50px; border-radius: 10px;"/></br><br>
+       Phone Number:<input id = text type="text" name="t1" size="10" style="width:200px; height:50px; border-radius: 10px; "/>
+       E-mail:<input id = text type="text" name="t1" size="80" style="width:200px; height:50px; border-radius: 10px; margin-right: 80px;"/><br><br>
+        Address: <textarea name="t2" rows="5" cols="25"></textarea></br>
+        State: <select id = state name="t3">
+            <option value="cho">Select State</option>
+            <option value="KA">Karnataka</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="TE">Telangana</option>
+            <option value="KL">Kerala</option>
+            <option value="AP">Andhra Pradesh</option>
+        </select></br>
+        Gender</br>
+        <input id="gender" type="radio" name="t4" value="M">MALE
+        <input id= "gender" type="radio" name="t4" value="F">FEMALE</br>
+        Qualification:<br>
+        <input id = "check" type="checkbox" name="t5" value="sslc">SSLC
+        <input id = "check" type="checkbox" name="t6" value="puc">PUC
+        <input id = "check" type="checkbox" name="t7" value="iti">ITI
+        <input id = "check" type="checkbox" name="t8" value="diploma">Diploma
+        <input id = "check" type="checkbox" name="t9" value="be">BE<br>
+        Branches: <select id= branch name="t10">
+            <option value="ch">Choose Branch</option>
+            <option value="cs">Computer Science and Engineering</option>
+            <option value="ec">Electronics and Communication Engineering</option>
+            <option value="me">Mechanical Engineering</option>
+            <option value="ce">Civil Engineering</option>
+            </select><br>
+        </div>
+        <center>
+        <input id=submit type="Submit" value="Submit"><a href="home.html"></a>
+        <input id=clear type="Reset" value="Clear">
+        </center>
+    </form>
+</body>
+</html>
